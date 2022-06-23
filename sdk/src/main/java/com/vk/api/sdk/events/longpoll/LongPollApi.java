@@ -79,7 +79,7 @@ abstract class LongPollApi extends EventsHandler {
             There are 2 ways: deserialize manually response from string OR do reconnection in each
             error case. There is second way - keep use typed object and reconnect when any error.
             */
-            LOG.error("Getting LongPoll events was failed", e);
+//            LOG.error("Getting LongPoll events was failed", e);
             throw new ConnectionClosedException();
         }
         isRunning = false;
